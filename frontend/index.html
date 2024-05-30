@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO-DO App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <main role="main">
+        <div class="container">
+            <section class="todo mt-5 mx-auto">
+                <form class="search mb-4" autocomplete="off">
+                    <div class="form-group">
+                        <input class="form-control m-auto text-light" type="text" name="search" placeholder="Search" />
+                    </div>
+                </form>
+                <ul class="todos list-group text-light"></ul>
+                <form class="add mt-4" autocomplete="off">
+                    <div class="form-group">
+                        <label for="task" class="text-light mb-3">Add a task</label>
+                        <input type="text" class="form-control text-light" id="task" name="task">
+                        <button type="submit" class="btn btn-primary mt-2">Add Task</button>
+                        <div class="invalid-feedback">Looks empty&hellip;</div>
+                    </div>
+                </form>
+            </section>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
